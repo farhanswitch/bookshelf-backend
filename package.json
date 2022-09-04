@@ -1,0 +1,26 @@
+{
+  "name": "tse-bookshelf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "knex": "^2.3.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^18.7.14",
+    "nodemon": "^2.0.19",
+    "typescript": "^4.8.2"
+  },
+  "scripts": {
+    "tscone": "rm -rf build/ && tsc",
+    "ts": "rm -rf build/ && tsc -w",
+    "dev": "nodemon ./build/index.js"
+  }
+}
