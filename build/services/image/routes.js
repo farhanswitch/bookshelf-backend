@@ -8,7 +8,7 @@ const controllers_1 = __importDefault(require("./controllers"));
 class ImageRoutes {
     constructor() {
         this.router = (0, express_1.Router)();
-        this.router.post("/upload", controllers_1.default.uploadImage.single("photo"), controllers_1.default.upload);
+        this.router.post("/upload", controllers_1.default.uploadImage, controllers_1.default.upload);
     }
 }
 exports.default = new ImageRoutes().router;

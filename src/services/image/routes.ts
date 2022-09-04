@@ -8,7 +8,7 @@ class ImageRoutes {
   constructor() {
     this.router.post(
       "/upload",
-      ImageController.uploadImage.single("photo"),
+      ImageController.uploadImage,
       ImageController.upload
     );
   }
