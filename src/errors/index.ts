@@ -17,7 +17,8 @@ class ErrorHandling {
     else
       return res.status(500).json({
         name: "Internal Server Error",
-        message: "Please contact our administrator",
+        message:
+          "Sorry, there were some technical issues while processing your request",
         details: err.message,
       });
   };

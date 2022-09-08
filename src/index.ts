@@ -1,5 +1,6 @@
 import express, { Application } from "express";
 import cors from "cors";
+import dotenv from "dotenv";
 
 import AllRoutes from "./routes";
 const port: number = 4000;
@@ -22,6 +23,7 @@ class App {
         credentials: false,
       })
     );
+    dotenv.config();
   }
 }
 
